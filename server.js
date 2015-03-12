@@ -41,7 +41,6 @@ app.use('/about', about);
 app.use('/contact', contact);
 app.use('/', index);
 
-
 app.set('port', (process.env.PORT || 3000));
 
 server.listen(app.get('port'), function(){
