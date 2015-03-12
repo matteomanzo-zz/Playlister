@@ -40,16 +40,7 @@ app.use('/verifysong', verifySong);
 app.use('/about', about);
 app.use('/contact', contact);
 app.use('/', index);
-// Handle 404
-app.use(function(req, res) {
-    res.status(400);
-   res.render('error/404.ejs', {title: '404: File Not Found'});
-});
-// Handle 500
-// app.use(function(error, req, res, next) {
-//     res.status(500);
-//    res.render('error/500.ejs', {title:'500: Internal Server Error', error: error});
-// });
+
 
 app.set('port', (process.env.PORT || 3000));
 
