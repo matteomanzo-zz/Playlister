@@ -2,6 +2,7 @@
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
+
 // Dependencies
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -12,7 +13,7 @@ var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/playlister
 var monk = require('monk');
 var db = monk(mongoUri);
 
-//router
+//Router
 var index = require('./routes/index');
 var partyGoer = require('./routes/partyGoer');
 var partyPlanner = require('./routes/partyPlanner');
@@ -40,16 +41,12 @@ app.use('/verifysong', verifySong);
 app.use('/about', about);
 app.use('/contact', contact);
 app.use('/', index);
+
 // Handle 404
 app.use(function(req, res) {
     res.status(400);
    res.render('error/404.ejs', {title: '404: File Not Found'});
 });
-// Handle 500
-// app.use(function(error, req, res, next) {
-//     res.status(500);
-//    res.render('error/500.ejs', {title:'500: Internal Server Error', error: error});
-// });
 
 app.set('port', (process.env.PORT || 3000));
 
