@@ -42,7 +42,7 @@ Then when the party goer leaves the range of the beacon (around 50m) their mobil
 ###Testing tools
 - Mocha
 - Chai
-- Selenium
+- SeleniumJS
 
 ##Challenges encountered
 
