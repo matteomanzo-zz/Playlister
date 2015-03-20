@@ -24,38 +24,25 @@ At this point the party goer's personal song choices are loaded into the party p
 
 Then when the party goer leaves the range of the beacon (around 50m) their mobile app sends another message to TurnUp TuneIn to say they have left the party. TurnUp TuneIn then removes that party goer's personal song choice from the party planner's Spotify Playlist.
 
-##Technologies Used
-
-###Front end
-- JavaScript
-- jQuery
-- HTML & CSS
-
-###Server
-- NodeJS
-- Express
-
-###Database
-- MongoDB
-- Monk wrapper
-
-###Testing tools
-- Mocha
-- Chai
-- SeleniumJS
+##Technologies
+| Front End   | Server      | Databases | Testing |
+| ------------|-------------| ----- | ----- |
+| JavaScript  | NodeJS      | MongoDB | Mocha |
+| HTML & CSS  | Express     | Monk Wrapper | Chai |
+| jQuery      |             |             | SeleniumJS |  
 
 ##Challenges encountered
 
-###Beacons
+#####Beacons
 - When we started the project we didn't understand what a beacon was, but were all keen to incorporate 'Internet of Things' hardware to make the project more interesting.
 
-###Mobile appication development
+#####Mobile appication development
 - This was new to the team (not covered in the course). Cordova was used to enable the app to be developed in JavaScript and compiled for Android. The app also needed to interact with the Bluetooth receiver, which added further challenges.
 
-###Testing JQuery interactions
+#####Testing JQuery interactions
 - Previously we had only tested front end features with Casper. Our use of JQuery meant we needed to use Selenium to run our feature tests, which was new technology to us.
 
-###Using a different database
+#####Using a different database
 - Previous projects had focused on using databases in a Ruby/Rails/Postgres stack, which have easily determined relationships between data. In using Mongo (with a Monk API wrapper) we were able to implement a database quickly and flexibly, but needed to work through the relationships between data.
 
 ## Collaborators
