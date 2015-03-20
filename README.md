@@ -31,6 +31,28 @@ Then when the party goer leaves the range of the beacon (around 50m) their mobil
 | HTML & CSS  | Express     | Monk Wrapper | Chai |
 | jQuery      |             |             | SeleniumJS |  
 
+##How to run it
+Clone the repository and change into the directory:
+```
+SSH:
+$ git clone git@github.com:matteomanzo/Playlister.git
+HTTPS:
+$ git clone https://github.com/matteomanzo/Playlister.git
+```
+Change directory
+```
+$ cd Playlister
+```
+Install the dependencies listed in the package.json 
+```
+$ npm install
+```
+Run the tests
+```
+$ grunt
+```
+Run it locally using `node server.js`, then visit `http://localhost:3000`.
+
 ##Challenges encountered
 
 #####Beacons
