@@ -1,9 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/matteomanzo/Playlister/badges/gpa.svg)](https://codeclimate.com/github/matteomanzo/Playlister) [![Test Coverage](https://codeclimate.com/github/matteomanzo/Playlister/badges/coverage.svg)](https://codeclimate.com/github/matteomanzo/Playlister)
 
-TurnUp TuneIn
-=======================
-[Visit the website](https://turnuptunein.herokuapp.com)
-##Synopsis
+#[TurnUp TuneIn](https://turnuptunein.herokuapp.com)
 
 ![IMAGE](public/TurnUpTuneIn.png)
 
@@ -32,15 +29,19 @@ Then when the party goer leaves the range of the beacon (around 50m) their mobil
 | jQuery      |             |             | SeleniumJS |  
 
 ##How to run it
-Clone the repository and change into the directory:
+Clone the repository
 ```
 SSH:
 $ git clone git@github.com:matteomanzo/Playlister.git
 HTTPS:
 $ git clone https://github.com/matteomanzo/Playlister.git
+```
+Change into the directory
+```
 $ cd Playlister
 ```
-If you don't have it already, install MongoDB and make sure it's running
+If you don't have it already, [download](https://www.mongodb.org/downloads) and install MongoDB and make sure it's running. If you can't run it from the terminal, you need [this](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb).
+
 Install selenium-standalone
 ```
 $ npm install selenium-standalone@latest -g
