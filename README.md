@@ -38,18 +38,33 @@ SSH:
 $ git clone git@github.com:matteomanzo/Playlister.git
 HTTPS:
 $ git clone https://github.com/matteomanzo/Playlister.git
-```
-Change directory
-```
 $ cd Playlister
+```
+If you don't have it already, install MongoDB and make sure it's running
+Install selenium-standalone
+```
+$ npm install selenium-standalone@latest -g
+$ selenium-standalone install
+```
+Run the selenium server on the background (open another terminal tab)
+```
+$ selenium-standalone start
 ```
 Install the dependencies listed in the package.json 
 ```
 $ npm install
 ```
-Run the tests
+Run all the tests (as selenium is not very stable, if you see that the first 3 fails, stop it and run it again)
 ```
-$ grunt
+$ grunt 
+```
+If you want to run only the unit tests
+```
+$ grunt unit
+```
+If you want to run only the feature tests
+```
+$ grunt feture
 ```
 Run it locally using `node server.js`, then visit `http://localhost:3000`.
 
