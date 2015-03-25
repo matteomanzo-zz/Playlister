@@ -88,9 +88,9 @@ Run it locally using `node server.js`, then visit `http://localhost:3000`.
 - [ ] Refactor validations
 
 ## Collaborators
-- Andy Newman (http://www.github.com/andyg72)
-- Hannah Carney (http://www.github.com/hannahcarney)
-- Jack Rubio (http://www.github.com/jackrubio26)
-- Marcin Walendzik (http://www.github.com/marcinwal)
-- Matteo Manzo (http://www.github.com/matteomanzo)
+- [Andy Newman](http://www.github.com/andyg72)
+- [Hannah Carney](http://www.github.com/hannahcarney)
+- [Jack Rubio](http://www.github.com/jackrubio26)
+- [Marcin Walendzik](http://www.github.com/marcinwal)
+- [Matteo Manzo](http://www.github.com/matteomanzo)
 
