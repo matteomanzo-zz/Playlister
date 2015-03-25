@@ -83,6 +83,10 @@ Run it locally using `node server.js`, then visit `http://localhost:3000`.
 #####Using a different database
 - Previous projects had focused on using databases in a Ruby/Rails/Postgres stack, which have easily determined relationships between data. In using Mongo (with a Monk API wrapper) we were able to implement a database quickly and flexibly, but needed to work through the relationships between data.
 
+##To do
+- [ ] Describe potential feature enhancements
+- [ ] Refactor validations
+
 ## Collaborators
 - Andy Newman (http://www.github.com/andyg72)
 - Hannah Carney (http://www.github.com/hannahcarney)
@@ -90,6 +94,3 @@ Run it locally using `node server.js`, then visit `http://localhost:3000`.
 - Marcin Walendzik (http://www.github.com/marcinwal)
 - Matteo Manzo (http://www.github.com/matteomanzo)
 
-##To do
-- [ ] Describe potential feature enhancements
-- [ ] Refactor validations
