@@ -121,7 +121,7 @@ describe('Party goer selecting songs page', function() {
         .click('#6UFhNbE4sLRUoM52kC4Xl41')
         .click('#addSong')
         .setValue('#email', 'rock@email.com')
-        .click('#go')
+        .submitForm('#party-email-form')
         .waitFor('#thank-you', 5000)
         .getText('#thank-you', function(err, text) {
           expect(text).to.include("Thanks, we've saved your party track choices for")
