@@ -21,7 +21,7 @@ describe('Party Planner Model', function() {
   });
 
 // Private Method
-  xit('should save token details', function(done) {
+  it('should save token details', function(done) {
     db.get('ppSpotifyCredentials').drop(function() {
       partyPlannerModel.saveTokensToDatabase('paxman', 'XC638HHJBhgj6', 'KJHEQFj09dGH');
       db.get('ppSpotifyCredentials').find({}, {}, function(err, doc) {
@@ -36,7 +36,7 @@ describe('Party Planner Model', function() {
   });
 
 // Dependent upon Spotify
-  xit('should save event details', function(done) {
+  it('should save event details', function(done) {
     db.get('ppEvent').drop();
     partyPlannerModel.saveEventDetails('Cool Party', '2015-03-17', 'Awesome Tunes', 'JohnMajor');
     db.get('ppEvent').find({}, {}, function(err, doc) {

@@ -77,7 +77,8 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-mocha-casperjs');
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-mocha-test');
-  grunt.registerTask('default', ['express:test', 'run:selenium_server', 'mochacli', 'stop:selenium_server']);
+  grunt.registerTask('feature', ['express:test', 'run:selenium_server', 'mochacli', 'stop:selenium_server']);
+  grunt.registerTask('default', ['express:test', 'run:selenium_server', 'mochacli', 'stop:selenium_server', 'mochaTest'])
   grunt.registerTask('hint', 'jshint')
-  grunt.registerTask('unittest', 'mochaTest');
+  grunt.registerTask('unit', 'mochaTest');
 };
