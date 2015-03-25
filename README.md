@@ -1,9 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/matteomanzo/Playlister/badges/gpa.svg)](https://codeclimate.com/github/matteomanzo/Playlister) [![Test Coverage](https://codeclimate.com/github/matteomanzo/Playlister/badges/coverage.svg)](https://codeclimate.com/github/matteomanzo/Playlister)
 
-TurnUp TuneIn
-=======================
-[Visit the website](https://turnuptunein.herokuapp.com)
-##Synopsis
+#[TurnUp TuneIn](https://turnuptunein.herokuapp.com)
 
 ![IMAGE](public/TurnUpTuneIn.png)
 
@@ -24,38 +21,66 @@ At this point the party goer's personal song choices are loaded into the party p
 
 Then when the party goer leaves the range of the beacon (around 50m) their mobile app sends another message to TurnUp TuneIn to say they have left the party. TurnUp TuneIn then removes that party goer's personal song choice from the party planner's Spotify Playlist.
 
-##Technologies Used
+##Technologies
+| Front End   | Server      | Databases | Testing |
+| ------------|-------------| ----- | ----- |
+| JavaScript  | NodeJS      | MongoDB | Mocha |
+| HTML & CSS  | Express     | Monk Wrapper | Chai |
+| jQuery      |             |             | SeleniumJS |  
 
-###Front end
-- JavaScript
-- jQuery
-- HTML & CSS
+##How to run it
+Clone the repository
+```
+SSH:
+$ git clone git@github.com:matteomanzo/Playlister.git
+HTTPS:
+$ git clone https://github.com/matteomanzo/Playlister.git
+```
+Change into the directory
+```
+$ cd Playlister
+```
+If you don't have it already, [download](https://www.mongodb.org/downloads) and install MongoDB and make sure it's running. If you can't run it from the terminal, you need [this](http://blog.mongodb.org/post/28925264384/macosx-preferences-pane-for-mongodb).
 
-###Server
-- NodeJS
-- Express
-
-###Database
-- MongoDB
-- Monk wrapper
-
-###Testing tools
-- Mocha
-- Chai
-- Selenium
+Install selenium-standalone
+```
+$ npm install selenium-standalone@latest -g
+$ selenium-standalone install
+```
+Run the selenium server on the background (open another terminal tab)
+```
+$ selenium-standalone start
+```
+Install the dependencies listed in the package.json 
+```
+$ npm install
+```
+Run all the tests (as selenium is not very stable, if you see that the first 3 fails, stop it and run it again)
+```
+$ grunt 
+```
+If you want to run only the unit tests
+```
+$ grunt unit
+```
+If you want to run only the feature tests
+```
+$ grunt feture
+```
+Run it locally using `node server.js`, then visit `http://localhost:3000`.
 
 ##Challenges encountered
 
-###Beacons
+#####Beacons
 - When we started the project we didn't understand what a beacon was, but were all keen to incorporate 'Internet of Things' hardware to make the project more interesting.
 
-###Mobile appication development
+#####Mobile appication development
 - This was new to the team (not covered in the course). Cordova was used to enable the app to be developed in JavaScript and compiled for Android. The app also needed to interact with the Bluetooth receiver, which added further challenges.
 
-###Testing JQuery interactions
+#####Testing JQuery interactions
 - Previously we had only tested front end features with Casper. Our use of JQuery meant we needed to use Selenium to run our feature tests, which was new technology to us.
 
-###Using a different database
+#####Using a different database
 - Previous projects had focused on using databases in a Ruby/Rails/Postgres stack, which have easily determined relationships between data. In using Mongo (with a Monk API wrapper) we were able to implement a database quickly and flexibly, but needed to work through the relationships between data.
 
 ## Collaborators
@@ -67,3 +92,4 @@ Then when the party goer leaves the range of the beacon (around 50m) their mobil
 
 ##To do
 - [ ] Describe potential feature enhancements
+- [ ] Refactor validations
