@@ -86,6 +86,7 @@ Run it locally using `node server.js`, then visit `http://localhost:3000`.
 ##To do
 - [ ] Describe potential feature enhancements
 - [ ] Refactor validations
+- [ ] Link the mobile app
 
 ## Collaborators
 - [Andy Newman](http://www.github.com/andyg72)
